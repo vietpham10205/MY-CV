@@ -1,0 +1,103 @@
+\documentclass{resume}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
+\usepackage{setspace}
+\setstretch{0.96}
+\emergencystretch=2em
+\usepackage{enumitem}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Redefine section and name spacing for single-page layout
+\renewcommand{\sectionskip}{\vspace{2.5pt}}
+\renewcommand{\sectionlineskip}{\vspace{1pt}}
+\renewcommand{\nameskip}{\vspace{1pt}}
+\renewcommand{\addressskip}{\vspace{1pt}}
+
+\renewenvironment{rSection}[1]{
+  \sectionskip
+  {\color{headerblue}\textbf{\MakeUppercase{#1}}}
+  \sectionlineskip
+  {\color{rulegray}\hrule height 0.6pt}
+  \vspace{0pt}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{0pt}
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+\name{Pham Hung Quoc Viet}
+\address{+84 937 404 708 \\ Thu Duc, Ho Chi Minh City \\ \href{mailto:phamviet1415@gmail.com}{phamviet1415@gmail.com} \\ \href{https://github.com/vietpham10205}{github.com/vietpham10205}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-2pt}
+{Analytical 3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with strong web programming foundations (HTML5, CSS3, JavaScript, PHP) and database design skills. Experienced in building automated data pipelines, developing responsive web-based dashboards (Streamlit), and scripting in Python. Possesses a strong mindset in utilizing generative AI tools for efficient troubleshooting, debugging, and task automation. Seeking an SEO Technical Intern position to leverage programming skills and analytical capabilities to optimize website speed, crawlability, search engine indexing, and structure.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-2pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+\textbf{Bachelor of Information Systems} \hfill GPA: 8.06/10 \\
+\textit{Relevant Coursework: Web Application Development, Database Management Systems, Information Systems Analysis \& Design}
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-2pt}
+    \renewcommand{\arraystretch}{0.95}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
+        Web Technologies      & HTML5, CSS3, JavaScript, PHP, WordPress (basic), HTTP/DNS basics \\
+        Programming           & Python, SQL, C++, Java \\
+        AI \& Automation      & AI-Powered Coding, Prompt Engineering, Web Crawling \& Scraping, Script-based Task Automation \\
+        Data \& Databases     & SQL Server, PostgreSQL, MySQL, Pandas, NumPy, SSIS \\
+        Tools \& Platforms    & Git, GitHub, Docker, Streamlit, Power BI, Excel, VS Code \\
+        Others \& Languages   & IELTS 6.5 (2022), Agile/Scrum Methodology \\
+    \end{tabular}
+    \renewcommand{\arraystretch}{1.0}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
+    {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{Web-Based Interface:} Built an interactive web dashboard using Streamlit to monitor system metrics and visualize real-time analytical features.
+        \item \textbf{Stream Ingestion \& Logs Processing:} Set up a low-latency Kafka pipeline to ingest and parse high-velocity JSON events at 200\,msg/s (relevant to server log monitoring and traffic audit).
+        \item \textbf{Automation Scripting:} Programmed Python scripts to automate database writing (PostgreSQL) and trigger automated model retraining schedules.
+        \item \textbf{Containerization:} Deployed Kafka, Zookeeper, and database clusters using Docker, establishing network connectivity between containerized web components.
+    \end{itemize}
+    }
+    \vspace{5pt}
+
+    \item \textbf{Bank Customer Churn Prediction \& Explainability} \hfill 2026\\
+    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas, Seaborn}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{Python Automation Tooling:} Wrote clean, modular Python scripts using Pandas, NumPy, and Scikit-learn for automated data preparation (Winsorization, scaling, encoding).
+        \item \textbf{AI-Driven Problem Solving:} Leveraged advanced generative AI coding techniques and prompt engineering to accelerate debugging, optimize hyperparameter searches (Optuna), and resolve API versioning issues.
+        \item \textbf{Analytical Feature Auditing:} Applied SHAP and LIME algorithms to identify key impact drivers and quantify the statistical stability of variables in predictive datasets.
+    \end{itemize}
+    }
+    \vspace{5pt}
+
+    \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
+    {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{Database Performance Tuning:} Modeled structured Star Schemas and optimized database indexing in SQL Server to ensure efficient data queries and speed up analysis.
+        \item \textbf{Data Cleaning ETL:} Engineered SSIS packages to automate ETL pipelines, extracting, cleaning, and validating raw datasets from CSV files to maintain data integrity.
+        \item \textbf{Statistical Segmentation:} Implemented K-Means clustering and classification trees in Python to perform customer behavioral segmentation.
+    \end{itemize}
+    }
+\end{rSection}
+
+\end{document}
