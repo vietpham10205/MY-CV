@@ -1,0 +1,104 @@
+\documentclass{resume}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
+\usepackage{setspace}
+\setstretch{0.92}
+\emergencystretch=2em
+\usepackage{enumitem}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Redefine section and name spacing for single-page layout
+\renewcommand{\sectionskip}{\vspace{2.5pt}}
+\renewcommand{\sectionlineskip}{\vspace{1pt}}
+\renewcommand{\nameskip}{\vspace{1pt}}
+\renewcommand{\addressskip}{\vspace{1pt}}
+
+\renewenvironment{rSection}[1]{
+  \sectionskip
+  {\color{headerblue}\textbf{\MakeUppercase{#1}}}
+  \sectionlineskip
+  {\color{rulegray}\hrule height 0.6pt}
+  \vspace{0pt}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{0pt}
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+\name{Pham Hung Quoc Viet}
+\address{+84 937 404 708 \\ Thu Duc, Ho Chi Minh City \\ \href{mailto:phamviet1415@gmail.com}{phamviet1415@gmail.com} \\ \href{https://github.com/vietpham10205}{github.com/vietpham10205}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-2pt}
+{Analytical and growth-oriented 3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with practical experience in Business Analytics, Data Warehousing, and E-commerce Customer Behavior analysis. Skilled at translating complex datasets into actionable strategic insights that drive platform growth and monetization. Seeking a \textbf{Platform Strategy Intern} position at TikTok to leverage data mining, BI, and problem-solving capabilities.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-2pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+\textbf{Bachelor of Information Systems} \hfill GPA: 8.06/10 \\
+\textit{Relevant Coursework: Information Systems Analysis \& Design, Database Management Systems, Data Mining, Web Development}
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-2pt}
+    \renewcommand{\arraystretch}{0.95}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
+        Analytics \& BI        & Advanced Excel (Pivot, Power Query), Power BI, SSIS, SSAS, MDX, Star Schema, Cohort \& Trend Analysis \\
+        Programming \& Query  & Python (Pandas, NumPy, Seaborn, Plotly), SQL (PostgreSQL, SQL Server, MySQL, Oracle), C++, Java \\
+        Big Data \& Platforms & Apache Spark (PySpark), Kafka, Docker, Git, GitHub, SAP S/4HANA, Odoo, Streamlit, Figma \\
+        AI \& Machine Learning& Scikit-learn, XGBoost, Feature Engineering, Anomaly Detection, Explainable AI (XAI), Class Imbalance Handling \\
+        Languages \& Others   & IELTS 6.5 (2022), Agile/Scrum Methodology \\
+    \end{tabular}
+    \renewcommand{\arraystretch}{1.0}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
+    {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{ETL \& Data Warehousing:} Built automated SSIS pipelines to clean and centralize e-commerce transaction data (100k+ records) into a SQL Server Data Warehouse, optimizing performance for strategic reporting.
+        \item \textbf{Business Intelligence (BI):} Designed Star Schema and SSAS OLAP Cubes with MDX to enable ad-hoc, multi-dimensional cohort analysis on customer purchasing patterns (recency, frequency).
+        \item \textbf{Customer Segmentation \& Analytics:} Applied K-Means clustering in Python to perform behavioral customer segmentation, and Decision Trees to predict spending levels, identifying key drivers of customer lifetime value (LTV).
+        \item \textbf{Actionable Dashboards:} Designed interactive Power BI dashboards integrating OLAP cubes and ML predictions to monitor customer retention, purchase frequency, and average order value (AOV) KPIs.
+    \end{itemize}
+    }
+    \vspace{5pt}
+
+    \item \textbf{Bank Customer Churn Prediction \& Explainability} \hfill 2026\\
+    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas, Seaborn}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{Statistical Analysis \& EDA:} Conducted exploratory data analysis on a 10k-record bank dataset; applied Winsorization, encoding, normalization, and engineered new behavioral features to identify core churn indicators.
+        \item \textbf{Class Imbalance Mitigation:} Utilized SMOTE to address 80/20 class imbalance, augmenting training data from 6,400 to 10,192 samples to enhance model sensitivity (recall) to potential churners.
+        \item \textbf{Predictive Modeling \& Benchmarking:} Trained and benchmarked 7+ ML algorithms (XGBoost, Random Forest, etc.) with Optuna tuning to identify users at high risk of churning.
+        \item \textbf{Risk Attribution \& Insights:} Applied SHAP and LIME explainability models, running Jaccard similarity (0.596) to identify active membership and product usage as key churn drivers.
+    \end{itemize}
+    }
+    \vspace{5pt}
+
+    \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
+    {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
+    {\small
+    \begin{itemize}[nosep, leftmargin=1.2em]
+        \item \textbf{Real-time Ingestion:} Configured Kafka \& Zookeeper clusters with Python producers streaming JSON events at 200\,msg/s.
+        \item \textbf{Operational Intelligence:} Processed streaming data using PySpark Structured Streaming to compute 14 rolling-window statistical features.
+        \item \textbf{Operational Risk Control:} Built an Isolation Forest + MinCovDet ensemble model with strict-voting to identify real-time route anomalies.
+        \item \textbf{Reporting \& Visualization:} Integrated output streams with PostgreSQL and built a Streamlit dashboard with automated model retraining to provide managers with real-time operational reports.
+    \end{itemize}
+    }
+\end{rSection}
+
+\end{document}
