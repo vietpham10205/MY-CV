@@ -1,20 +1,20 @@
-\documentclass{resume}
+﻿\documentclass{resume}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
 \usepackage{setspace}
-\setstretch{0.96}
+\setstretch{1.05}
 \emergencystretch=2em
 \usepackage{enumitem}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 % Redefine section and name spacing for single-page layout
-\renewcommand{\sectionskip}{\vspace{2.5pt}}
-\renewcommand{\sectionlineskip}{\vspace{1pt}}
-\renewcommand{\nameskip}{\vspace{1pt}}
-\renewcommand{\addressskip}{\vspace{1pt}}
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
 
 \renewenvironment{rSection}[1]{
   \sectionskip
@@ -41,7 +41,7 @@
 
 \begin{rSection}{Objective}
 \vspace{-2pt}
-{Analytical 3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with strong web programming foundations (HTML5, CSS3, JavaScript, PHP) and database design skills. Experienced in building automated data pipelines, developing responsive web-based dashboards (Streamlit), and scripting in Python. Possesses a strong mindset in utilizing generative AI tools for efficient troubleshooting, debugging, and task automation. Seeking an SEO Technical Intern position to leverage programming skills and analytical capabilities to optimize website speed, crawlability, search engine indexing, and structure.}
+{3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with strong web programming foundations (HTML5, CSS3, JavaScript, PHP) and database design skills. Experienced in building automated data pipelines, optimizing databases, and programming in Python. Seeking an \textbf{SEO Technical Intern} position to leverage programming skills and analytical capabilities to optimize website speed, crawlability, search engine indexing, and site architecture.}
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -55,12 +55,11 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
 \vspace{-2pt}
     \renewcommand{\arraystretch}{0.95}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
-        Web Technologies      & HTML5, CSS3, JavaScript, PHP, WordPress (basic), HTTP/DNS basics \\
+        Web Technologies      & HTML5, CSS3, JavaScript, PHP, WordPress, HTTP/DNS \\
         Programming           & Python, SQL, C++, Java \\
-        AI \& Automation      & AI-Powered Coding, Prompt Engineering, Web Crawling \& Scraping, Script-based Task Automation \\
-        Data \& Databases     & SQL Server, PostgreSQL, MySQL, Pandas, NumPy, SSIS \\
-        Tools \& Platforms    & Git, GitHub, Docker, Streamlit, Power BI, Excel, VS Code \\
-        Others \& Languages   & IELTS 6.5 (2022), Agile/Scrum Methodology \\
+        Data \& Crawling      & Web Scraping, Pandas, Excel, SQL Server, PostgreSQL \\
+        Tools                 & Git/GitHub, VS Code \\
+        Languages             & IELTS 6.5 (2022) \\
     \end{tabular}
     \renewcommand{\arraystretch}{1.0}
 \end{rSection}
@@ -69,35 +68,26 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
     \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
     {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Web-Based Interface:} Built an interactive web dashboard using Streamlit to monitor system metrics and visualize real-time analytical features.
-        \item \textbf{Stream Ingestion \& Logs Processing:} Set up a low-latency Kafka pipeline to ingest and parse high-velocity JSON events at 200\,msg/s (relevant to server log monitoring and traffic audit).
-        \item \textbf{Automation Scripting:} Programmed Python scripts to automate database writing (PostgreSQL) and trigger automated model retraining schedules.
-        \item \textbf{Containerization:} Deployed Kafka, Zookeeper, and database clusters using Docker, establishing network connectivity between containerized web components.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Web Application \& Performance:} Developed an interactive web-based dashboard using Streamlit, optimizing rendering speeds and state management for real-time data visualization.
+        \item \textbf{Server Log Processing Pipeline:} Architected a low-latency ingestion pipeline (Kafka) capable of parsing JSON event streams at 200 msg/s, demonstrating skills directly applicable to large-scale server log analysis and crawl budget auditing.
+        \item \textbf{Python Automation \& Scripting:} Programmed robust Python scripts to automate database writing operations (PostgreSQL) and trigger scheduled tasks, reducing manual intervention in data processing.
+        \item \textbf{Infrastructure \& Containerization:} Deployed containerized microservices (Docker) and configured network routing between web components and databases, building foundational knowledge in server architecture.
     \end{itemize}
     }
-    \vspace{5pt}
-
-    \item \textbf{Bank Customer Churn Prediction \& Explainability} \hfill 2026\\
-    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas, Seaborn}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
-    {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Python Automation Tooling:} Wrote clean, modular Python scripts using Pandas, NumPy, and Scikit-learn for automated data preparation (Winsorization, scaling, encoding).
-        \item \textbf{AI-Driven Problem Solving:} Leveraged advanced generative AI coding techniques and prompt engineering to accelerate debugging, optimize hyperparameter searches (Optuna), and resolve API versioning issues.
-        \item \textbf{Analytical Feature Auditing:} Applied SHAP and LIME algorithms to identify key impact drivers and quantify the statistical stability of variables in predictive datasets.
-    \end{itemize}
-    }
-    \vspace{5pt}
+    \vspace{15pt}
 
     \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
     {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Database Performance Tuning:} Modeled structured Star Schemas and optimized database indexing in SQL Server to ensure efficient data queries and speed up analysis.
-        \item \textbf{Data Cleaning ETL:} Engineered SSIS packages to automate ETL pipelines, extracting, cleaning, and validating raw datasets from CSV files to maintain data integrity.
-        \item \textbf{Statistical Segmentation:} Implemented K-Means clustering and classification trees in Python to perform customer behavioral segmentation.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Database Optimization for Speed:} Modeled structured Star Schemas and implemented strategic database indexing in SQL Server, significantly improving query execution times and data retrieval speed.
+        \item \textbf{Automated Data Extraction (ETL):} Engineered automated SSIS packages to extract, transform, and load raw CSV datasets, establishing reliable pipelines similar to automated web scraping and SEO data collection workflows.
+        \item \textbf{Data Cleaning \& Validation:} Implemented rigorous data cleaning protocols to ensure data integrity across 100k+ records, maintaining high data quality standards for downstream reporting.
+        \item \textbf{Analytical Reporting:} Developed comprehensive Power BI dashboards to track performance metrics, translating raw data into actionable insights for continuous technical optimization.
     \end{itemize}
     }
 \end{rSection}
 
 \end{document}
+

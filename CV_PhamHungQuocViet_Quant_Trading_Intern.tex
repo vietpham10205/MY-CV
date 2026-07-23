@@ -1,20 +1,20 @@
-\documentclass{resume}
+﻿\documentclass{resume}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
 \usepackage{setspace}
-\setstretch{0.96}
+\setstretch{1.05}
 \emergencystretch=2em
 \usepackage{enumitem}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 % Redefine section and name spacing for single-page layout
-\renewcommand{\sectionskip}{\vspace{2.5pt}}
-\renewcommand{\sectionlineskip}{\vspace{1pt}}
-\renewcommand{\nameskip}{\vspace{1pt}}
-\renewcommand{\addressskip}{\vspace{1pt}}
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
 
 \renewenvironment{rSection}[1]{
   \sectionskip
@@ -41,7 +41,7 @@
 
 \begin{rSection}{Objective}
 \vspace{-2pt}
-{Analytical 3rd-year student at University of Information Technology -- VNU-HCM (UIT) with a solid foundation in Probability \& Statistics, Time-Series Analysis, and Machine Learning. Experienced in building high-throughput stream processing pipelines, engineering rolling-window statistical features, and benchmarking predictive models using Python and PySpark. Seeking a Quantitative Trading / Fintech Intern position to apply mathematical, statistical, and algorithmic modeling to develop, backtest, and optimize data-driven trading strategies.}
+{3rd-year student at University of Information Technology -- VNU-HCM (UIT) with a solid foundation in Probability \& Statistics, Time-Series Analysis, and Machine Learning. Experienced in building high-throughput stream processing pipelines, engineering rolling-window statistical features, and benchmarking predictive models using Python and PySpark. Seeking a \textbf{Quantitative Trading / Fintech Intern} position to apply mathematical, statistical, and algorithmic modeling to develop, backtest, and optimize data-driven trading strategies.}
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -55,12 +55,11 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
 \vspace{-2pt}
     \renewcommand{\arraystretch}{0.95}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
-        Programming           & Python, SQL, C++, Java, PHP \\
-        Quantitative \& Stats  & Probability \& Statistics, Time-Series Analysis, Statistical Modeling, EDA, Data Wrangling \\
-        AI \& Machine Learning& Scikit-learn, XGBoost, LightGBM, Random Forest, Anomaly Detection, Feature Engineering, Explainable AI (XAI), Class Imbalance Handling, Optuna Tuning, TensorFlow \\
-        Data \& Big Data       & Pandas, NumPy, Matplotlib, Seaborn, Apache Spark (PySpark), Kafka, SQL Server, PostgreSQL \\
-        Tools \& Platforms    & Git, GitHub, Docker, Streamlit, Jupyter Notebook, VS Code, Excel, SSIS \\
-        Others \& Languages   & IELTS 6.5 (2022), Agile/Scrum Methodology \\
+        Programming           & Python, C++, SQL, Java, PHP \\
+        Quantitative          & Probability \& Statistics, Time-Series Analysis, Statistical Modeling \\
+        Machine Learning      & Scikit-learn, XGBoost, LightGBM, TensorFlow, Optuna \\
+        Data \& Streaming     & Pandas, NumPy, PySpark, Kafka, PostgreSQL \\
+        Tools \& Languages    & Git/GitHub, Docker, Jupyter Notebook, IELTS 6.5 (2022) \\
     \end{tabular}
     \renewcommand{\arraystretch}{1.0}
 \end{rSection}
@@ -69,37 +68,26 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
     \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
     {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Data Ingestion:} Developed low-latency Kafka ingestion pipeline; simulated high-frequency event producer streaming message streams at 200\,msg/s.
-        \item \textbf{Time-Series Feature Engineering:} Utilized PySpark Structured Streaming (5,000 offsets/trigger) to compute 14 rolling-window statistical features and moving averages using Pandas.
-        \item \textbf{Anomaly \& Pattern Detection:} Designed an Isolation Forest and Minimum Covariance Determinant (MinCovDet) ensemble with strict voting to identify statistical anomalies and regime shifts.
-        \item \textbf{Deployment \& Retraining:} Managed continuous ingestion to PostgreSQL; implemented automated model evaluation and parameter retraining triggered every 25 streaming batches.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{High-Frequency Data Ingestion:} Developed a low-latency Kafka pipeline to ingest high-frequency event streams at 200 msg/s, simulating real-time market data architectures.
+        \item \textbf{Time-Series Feature Engineering:} Leveraged PySpark Structured Streaming to compute 14 rolling-window statistical features (e.g., moving averages, volatility metrics) on live data streams.
+        \item \textbf{Anomaly \& Regime Shift Detection:} Designed an Isolation Forest and Minimum Covariance Determinant (MinCovDet) ensemble with strict voting to identify statistical anomalies and regime shifts.
+        \item \textbf{Automated Model Retraining:} Managed continuous data ingestion to PostgreSQL and implemented automated model evaluation and parameter retraining triggered every 25 streaming batches.
     \end{itemize}
     }
-    \vspace{5pt}
+    \vspace{15pt}
 
-    \item \textbf{Bank Customer Churn Prediction \& Explainability} \hfill 2026\\
-    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas, Seaborn}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
+    \item \textbf{Bank Customer Churn Prediction \& Risk Attribution} \hfill 2026\\
+    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Statistical Preprocessing:} Conducted extensive exploratory analysis on a bank dataset; applied Winsorization (outlier mitigation), encoding, and normalization to improve the signal-to-noise ratio.
-        \item \textbf{Class Balancing:} Implemented SMOTE to resolve class imbalance (20.4\% positive rate), statistically augmenting data from 6,400 to 10,192 samples to enhance model sensitivity.
-        \item \textbf{Predictive Model Benchmarking:} Trained, optimized, and evaluated 7+ machine learning algorithms (XGBoost, Random Forest, LightGBM, etc.) using Optuna and GridSearchCV for hyperparameter tuning.
-        \item \textbf{Model Explainability \& Risk Attribution:} Utilized SHAP and LIME to dissect feature contributions; employed Jaccard similarity analysis to quantify stability of key explanatory variables.
-    \end{itemize}
-    }
-    \vspace{5pt}
-
-    \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
-    {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
-    {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Data Pipeline:} Engineered automated SSIS pipelines to clean, pre-process, and consolidate high-volume data streams into SQL Server.
-        \item \textbf{Dimensional \& Statistical Modeling:} Modeled a structured Star Schema and built OLAP cubes with MDX to perform hierarchical slice-and-dice data analysis.
-        \item \textbf{Quantitative Segmentation:} Implemented K-Means clustering for behavioral segmentation and Decision Tree classification to predict customer spending levels using Python (Scikit-learn).
-        \item \textbf{BI Visualization:} Designed interactive dashboards combining model predictions and business metrics to track key performance indicators.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Statistical Preprocessing \& EDA:} Conducted extensive exploratory data analysis; applied Winsorization to mitigate outliers, improving the signal-to-noise ratio in predictive datasets.
+        \item \textbf{Class Balancing \& Data Augmentation:} Implemented SMOTE to resolve class imbalance (20.4\% positive rate), statistically augmenting data from 6,400 to 10,192 samples to enhance model sensitivity.
+        \item \textbf{Algorithmic Benchmarking:} Trained, optimized, and evaluated 7+ predictive models (XGBoost, LightGBM, Random Forest) utilizing Optuna and GridSearchCV for rigorous hyperparameter tuning.
+        \item \textbf{Risk Attribution \& Explainability:} Utilized SHAP and LIME to dissect feature contributions; employed Jaccard similarity analysis to quantify the stability of key risk variables across subsets.
     \end{itemize}
     }
 \end{rSection}
 
 \end{document}
+

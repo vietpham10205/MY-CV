@@ -1,20 +1,20 @@
-\documentclass{resume}
+﻿\documentclass{resume}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
 \usepackage{setspace}
-\setstretch{0.96}
+\setstretch{1.05}
 \emergencystretch=2em
 \usepackage{enumitem}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 % Redefine section and name spacing for single-page layout
-\renewcommand{\sectionskip}{\vspace{2.5pt}}
-\renewcommand{\sectionlineskip}{\vspace{1pt}}
-\renewcommand{\nameskip}{\vspace{1pt}}
-\renewcommand{\addressskip}{\vspace{1pt}}
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
 
 \renewenvironment{rSection}[1]{
   \sectionskip
@@ -41,7 +41,7 @@
 
 \begin{rSection}{Objective}
 \vspace{-2pt}
-{Proactive 3rd-year student at University of Information Technology -- VNU-HCM (UIT) with practical experience in Big Data Processing, Data Warehousing, and Machine Learning. Adept at building robust data pipelines and translating complex datasets into actionable strategic insights. Seeking an internship position as a \textbf{Data Analyst, Data Engineer, or Business Analyst} to leverage technical proficiency and drive impactful, data-driven business solutions.}
+{3rd-year student at University of Information Technology -- VNU-HCM (UIT) with practical experience in Big Data Processing, Data Warehousing, and Machine Learning. Adept at building robust data pipelines, designing ETL architectures, and translating complex datasets into actionable strategic insights. Seeking an internship position as a \textbf{Data Analyst, Data Engineer, or Business Analyst} to leverage my technical proficiency and drive impactful, data-driven business solutions.}
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -54,13 +54,12 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
 \vspace{-2pt}
     \renewcommand{\arraystretch}{0.95}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
-        Programming           & Python, Java, C++, PHP, SQL, JavaScript, HTML5, CSS \\
-        Data Analysis         & Pandas, NumPy, Matplotlib, Seaborn, Plotly, Statistical Analysis, EDA, Data Cleaning \& Wrangling, Excel \\
-        Databases             & SQL Server, PostgreSQL, MySQL, Oracle \\
-        Big Data \& BI        & Apache Spark (PySpark), Kafka, SSIS, SSAS, Power BI, MDX \\
-        AI \& Machine Learning& Scikit-learn, TensorFlow, XGBoost, Feature Engineering, Ensemble Learning, Anomaly Detection, Explainable AI (XAI), Class Imbalance Handling, Data Mining \\
-        Tools \& Platforms    & Docker, Git, GitHub, SAP S/4HANA, Odoo, Kaggle, Streamlit, draw.io, UML, Figma \\
-        Others                & Agile/Scrum Methodology, IELTS 6.5 (2022) \\
+        Programming           & Python, SQL, Java, C++, PHP \\
+        Data Analysis         & Pandas, NumPy, Matplotlib, Seaborn, Excel \\
+        Databases             & SQL Server, PostgreSQL, MySQL \\
+        Big Data \& BI        & PySpark, Kafka, SSIS, SSAS, Power BI \\
+        Machine Learning      & Scikit-learn, XGBoost, TensorFlow, SHAP \\
+        Tools \& Languages    & Docker, Git/GitHub, Streamlit, IELTS 6.5 (2022) \\
     \end{tabular}
     \renewcommand{\arraystretch}{1.0}
 \end{rSection}
@@ -69,35 +68,23 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
     \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
     {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Data Ingestion:} Configured Kafka \& Zookeeper clusters; wrote Python producers to push JSON events at 200\,msg/s to a centralised topic.
-        \item \textbf{Stream Processing:} Used PySpark Structured Streaming (5,000 offsets/trigger) to engineer 14 real-time features using Spark SQL and Pandas.
-        \item \textbf{Anomaly Detection:} Built Isolation Forest + MinCovDet ensemble model with strict-voting to minimise false positives.
-        \item \textbf{Monitoring \& Retraining:} Output results to PostgreSQL; built a Streamlit dashboard with automated model retraining every 25 batches.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Real-time Data Ingestion:} Architected streaming data pipelines using Kafka and Zookeeper; developed Python producers to ingest JSON event streams at 200 msg/s into centralized topics.
+        \item \textbf{Big Data Stream Processing:} Leveraged PySpark Structured Streaming (5,000 offsets/trigger) to process live data and engineer 14 real-time statistical features using Spark SQL and Pandas.
+        \item \textbf{Anomaly Detection Pipeline:} Deployed an Isolation Forest and MinCovDet ensemble model with strict-voting to detect route anomalies, minimizing false positives in production.
+        \item \textbf{Monitoring \& Automation:} Integrated processed data streams into PostgreSQL; engineered a Streamlit dashboard with automated model retraining every 25 batches to ensure data reliability.
     \end{itemize}
     }
-    \vspace{5pt}
+    \vspace{15pt}
 
     \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
     {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{ETL Pipeline:} Developed automated SSIS packages to extract, clean, and migrate raw CSV datasets into SQL Server Data Warehouse.
-        \item \textbf{OLAP Modelling:} Designed Star Schema with Fact and 5 dimensions; built SSAS Cubes with MDX for Drill-down and Roll-up analysis.
-        \item \textbf{Data Mining:} Implemented K-Means clustering for customer segmentation and Decision Trees to predict spending levels using Python (Scikit-learn).
-        \item \textbf{Visualisation:} Created Power BI dashboards integrating OLAP cubes and ML predictions to monitor customer retention KPIs.
-    \end{itemize}
-    }
-    \vspace{5pt}
-
-    \item \textbf{Bank Customer Churn Prediction \& Explainability} \hfill 2026\\
-    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna, Pandas, Seaborn}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
-    {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{EDA \& Feature Engineering:} Conducted EDA on a 10k-record European bank dataset; applied Winsorisation, encoding, normalisation, and engineered new features to improve model signal.
-        \item \textbf{Class Imbalance Handling:} Applied SMOTE to address 80/20 class imbalance (churn rate 20.4\%), augmenting training data from 6,400 to 10,192 samples and boosting recall.
-        \item \textbf{Multi-Model Benchmarking:} Trained and compared 7+ algorithms (XGBoost, Random Forest, LightGBM, etc.) with GridSearchCV and Optuna tuning.
-        \item \textbf{Explainability (XAI):} Applied SHAP and LIME; Jaccard similarity analysis (0.596) identified Age, IsActiveMember, and NumOfProducts as key churn drivers.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{ETL Pipeline Development:} Engineered automated SSIS packages to extract, transform, and load (ETL) 100k+ raw transaction records into a centralized SQL Server Data Warehouse.
+        \item \textbf{Data Warehousing \& OLAP:} Designed a robust Star Schema architecture (1 Fact, 5 Dimensions) and built SSAS Cubes with MDX to enable high-performance Drill-down and Roll-up multi-dimensional analysis.
+        \item \textbf{Predictive Analytics \& Segmentation:} Implemented K-Means clustering and Decision Trees in Python (Scikit-learn) to segment customers and predict spending levels, driving data-informed business strategies.
+        \item \textbf{Data Visualization \& BI:} Developed interactive Power BI dashboards integrating OLAP cubes and ML predictions to track KPIs, transforming raw data into clear executive insights.
     \end{itemize}
     }
 \end{rSection}
@@ -105,3 +92,4 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
 
 
 \end{document}
+

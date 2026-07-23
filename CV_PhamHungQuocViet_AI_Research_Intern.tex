@@ -1,0 +1,94 @@
+﻿\documentclass{resume}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+\emergencystretch=2em
+\usepackage{enumitem}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Redefine section and name spacing for single-page layout
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
+
+\renewenvironment{rSection}[1]{
+  \sectionskip
+  {\color{headerblue}\textbf{\MakeUppercase{#1}}}
+  \sectionlineskip
+  {\color{rulegray}\hrule height 0.6pt}
+  \vspace{0pt}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{0pt}
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+\name{Pham Hung Quoc Viet}
+\address{+84 937 404 708 \\ Thu Duc, Ho Chi Minh City \\ \href{mailto:phamviet1415@gmail.com}{phamviet1415@gmail.com} \\ \href{https://github.com/vietpham10205}{github.com/vietpham10205}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-2pt}
+{3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with practical experience in Machine Learning and AI model development. Experienced using LLM APIs (OpenAI, Gemini) and currently researching AI agent architectures and business applications. Seeking an \textbf{AI Research Intern} position at Abstract Agency to integrate AI APIs into products, develop AI-driven automation workflows, and contribute to research that reduces operational time and cost.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-2pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+\textbf{Bachelor of Information Systems} \hfill GPA: 8.06/10 \\
+\textit{Relevant Coursework: Machine Learning, Data Mining, Information Systems Analysis \& Design, Database Management Systems, Web Development}
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-2pt}
+    \renewcommand{\arraystretch}{0.95}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
+        AI \& LLM             & OpenAI API, Gemini API, Prompt Engineering, AI Agent concepts (self-studied) \\
+        Machine Learning      & Scikit-learn, XGBoost, TensorFlow, SHAP, Optuna, SMOTE \\
+        Programming           & Python (Pandas, NumPy, Matplotlib), SQL, PHP \\
+        Data \& Automation    & PySpark, Kafka, Docker, PostgreSQL, Streamlit, Git/GitHub \\
+        BI \& Databases       & Power BI, SSIS, SSAS, SQL Server, PostgreSQL \\
+        Languages             & IELTS 6.5 (2022) -- proficient English technical documentation reader \\
+    \end{tabular}
+    \renewcommand{\arraystretch}{1.0}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \item \textbf{Bank Customer Churn Prediction \& AI Explainability} \hfill 2026\\
+    {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP, Optuna}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
+    {\small
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{AI Research \& Model Selection:} Independently researched and systematically benchmarked 7+ ML algorithms (XGBoost, LightGBM, TensorFlow DNN, Random Forest) with Optuna hyperparameter tuning -- selecting the optimal model for a real business problem, mirroring a structured AI research workflow.
+        \item \textbf{Data Engineering \& Preprocessing:} Applied Winsorization, feature encoding, and SMOTE oversampling to a 10k-record dataset (6,400 $\rightarrow$ 10,192 balanced samples), boosting model recall by improving training data quality on imbalanced classes.
+        \item \textbf{Explainable AI (XAI) for Business:} Leveraged SHAP and LIME to surface the top churn drivers (active membership, product count); ran Jaccard similarity analysis (0.596) to cross-validate findings -- translating black-box AI decisions into actionable insights for non-technical stakeholders.
+        \item \textbf{Research Documentation \& Proposal:} Produced structured benchmark reports with model-vs-model comparisons; proposed optimization strategies (threshold tuning, ensemble stacking) as next steps -- reflecting the periodic reporting requirement of AI research roles.
+    \end{itemize}
+    }
+    \vspace{15pt}
+
+    \item \textbf{NYC Taxi — Automated Real-time AI Anomaly Detection System} \hfill 2026\\
+    {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
+    {\small
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{End-to-end AI Workflow Design:} Architected a fully automated AI pipeline from real-time data ingestion (Kafka at 200 msg/s) through stream processing (PySpark, 14 engineered features) to anomaly scoring and reporting -- reducing manual monitoring to zero.
+        \item \textbf{Production AI Model Integration:} Embedded an Isolation Forest + MinCovDet ensemble (strict-voting to minimize false positives) directly into a live streaming pipeline, enabling autonomous real-time decisions without human intervention.
+        \item \textbf{Self-adapting AI Agent Principle:} Implemented automated model retraining triggered every 25 data batches, allowing the system to continuously adapt to concept drift -- a core behavior of production-grade AI agents.
+        \item \textbf{Operational Cost Reduction:} Delivered a Streamlit monitoring dashboard with auto-alerts, replacing manual shift-by-shift reviews and demonstrating measurable time savings through AI-driven workflow automation.
+    \end{itemize}
+    }
+\end{rSection}
+
+\end{document}
+

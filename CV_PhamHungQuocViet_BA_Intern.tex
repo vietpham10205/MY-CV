@@ -1,20 +1,20 @@
-\documentclass{resume}
+﻿\documentclass{resume}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
 \usepackage{setspace}
-\setstretch{0.92}
+\setstretch{1.05}
 \emergencystretch=2em
 \usepackage{enumitem}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 % Redefine section and name spacing for single-page layout
-\renewcommand{\sectionskip}{\vspace{2.5pt}}
-\renewcommand{\sectionlineskip}{\vspace{1pt}}
-\renewcommand{\nameskip}{\vspace{1pt}}
-\renewcommand{\addressskip}{\vspace{1pt}}
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
 
 \renewenvironment{rSection}[1]{
   \sectionskip
@@ -41,7 +41,7 @@
 
 \begin{rSection}{Objective}
 \vspace{-2pt}
-{Proactive 3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with a strong foundation in Business Analysis, Data Warehousing, and Process Optimization. Experienced in requirements analysis, system modeling, and translating complex data/AI capabilities into actionable business values. Seeking a \textbf{Business Analyst Intern} position to leverage my technical background (ERP, BI, AI/ML) and analytical mindset to support ERP/AI ERP implementation, streamline business processes, facilitate UAT, and deliver high-quality user experiences.}
+{3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with a strong foundation in Business Analysis, Data Warehousing, and Process Optimization. Experienced in requirements analysis, system modeling, and translating complex data/AI capabilities into actionable business values. Seeking a \textbf{Business Analyst Intern} position to leverage my technical background (ERP, BI, AI/ML) and analytical mindset to support ERP/AI ERP implementation, streamline business processes, facilitate UAT, and deliver high-quality user experiences.}
 \end{rSection}
 
 \begin{rSection}{Education}
@@ -55,12 +55,12 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
 \vspace{-2pt}
     \renewcommand{\arraystretch}{0.95}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
-        Business Analysis     & Requirement Gathering, Process Mapping, Documentation, UAT Support, Stakeholder Communication \\
-        ERP \& Systems        & SAP S/4HANA, Odoo, Data Warehousing (SSIS, SSAS), System Integration \\
-        Tools \& Management   & draw.io, UML, Figma, Notion, Agile/Scrum Methodology, Excel/Google Sheets, PowerPoint \\
-        Data Analysis \& BI   & Power BI, Advanced Excel (Pivot, Power Query), SQL (SQL Server, PostgreSQL, MySQL), MDX \\
-        AI \& Tech Background & Python (Pandas, Scikit-learn), AI/ML (Predictive Modeling, Anomaly Detection), Apache Spark, Kafka \\
-        Languages \& Others   & IELTS 6.5 (2022), Logical Thinking, Problem Solving \\
+        Business Analysis     & Requirements Gathering, Process Mapping, Documentation, UML \\
+        ERP \& Systems        & SAP S/4HANA, Odoo, SSIS, SSAS \\
+        Data \& BI            & Power BI, SQL (SQL Server, PostgreSQL), Excel (Pivot, Power Query), MDX \\
+        Tools                 & draw.io, Figma, Notion, Git/GitHub \\
+        Tech Background       & Python (Pandas, Scikit-learn), PHP, PySpark, Kafka \\
+        Languages             & IELTS 6.5 (2022) \\
     \end{tabular}
     \renewcommand{\arraystretch}{1.0}
 \end{rSection}
@@ -69,37 +69,26 @@ University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expec
     \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
     {\small \textit{SSIS, SSAS, SQL Server, Power BI, MDX, Python, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Requirements \& Process Mapping:} Analyzed business requirements for e-commerce performance tracking; mapped data flows to design a Star Schema and OLAP cubes for multi-dimensional cohort analysis.
-        \item \textbf{ETL \& System Architecture:} Built automated SSIS pipelines to clean and centralize 100k+ transaction records into a SQL Server Data Warehouse, ensuring data consistency for downstream reporting.
-        \item \textbf{Data Mining \& Insights:} Applied K-Means clustering and Decision Trees to perform customer segmentation and predict spending levels, delivering actionable insights on customer lifetime value.
-        \item \textbf{Reporting \& Documentation:} Developed interactive Power BI dashboards integrating OLAP cubes and ML predictions to monitor retention and purchase frequency; prepared clear metric documentation for end-users.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Requirements Gathering \& Process Mapping:} Elicited and analyzed business requirements for e-commerce performance tracking; modeled system workflows and mapped data flows for multi-dimensional cohort analysis.
+        \item \textbf{Data Integration Planning:} Designed and implemented automated data pipelines to centralize 100k+ transaction records, ensuring data consistency and reliability for downstream business reporting.
+        \item \textbf{Data-Driven Business Strategy:} Applied clustering models to segment customers and predict spending behavior, translating complex analytical outputs into actionable strategies for improving customer lifetime value.
+        \item \textbf{BI Dashboarding \& KPI Tracking:} Developed interactive Power BI dashboards to monitor core KPIs (retention, purchase frequency); created clear metric documentation to facilitate user adoption and decision-making.
     \end{itemize}
     }
-    \vspace{5pt}
+    \vspace{15pt}
 
     \item \textbf{Bank Customer Churn Prediction \& Explainability (AI/ML)} \hfill 2026\\
     {\small \textit{Python, Scikit-learn, TensorFlow, XGBoost, LightGBM, SMOTE, SHAP}} \hfill | \href{https://github.com/ThanhThang5722/Bank-Customer-Churn-Prediction}{GitHub}
     {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{Business Problem Solving:} Addressed the critical business issue of customer churn by analyzing a 10k-record European bank dataset to identify core behavioral indicators.
-        \item \textbf{Data Analysis \& Preprocessing:} Conducted exploratory data analysis (EDA), handled 80/20 class imbalance with SMOTE, and engineered new features to improve prediction accuracy.
-        \item \textbf{Predictive Modeling:} Benchmarked multiple ML algorithms (XGBoost, Random Forest, etc.) to accurately identify users at high risk of churning.
-        \item \textbf{Insights \& Explainability:} Utilized SHAP and LIME to interpret model results, translating complex AI/ML outputs into understandable business drivers (e.g., active membership, product usage) for stakeholders.
-    \end{itemize}
-    }
-    \vspace{5pt}
-
-    \item \textbf{NYC Taxi — Real-time Fleet Intelligence \& Anomaly Detection} \hfill 2026\\
-    {\small \textit{PySpark, Kafka, Docker, PostgreSQL, Streamlit, Pandas, Scikit-learn}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
-    {\small
-    \begin{itemize}[nosep, leftmargin=1.2em]
-        \item \textbf{System Design \& Implementation:} Designed the architecture for a real-time fleet monitoring system using PySpark and Kafka to process JSON events at 200 msg/s.
-        \item \textbf{Risk Management \& AI:} Deployed an Isolation Forest + MinCovDet ensemble model to detect real-time route anomalies, enhancing operational risk control and automation.
-        \item \textbf{UI/UX \& User Feedback:} Built an interactive Streamlit dashboard for real-time operational reporting, ensuring smooth user experience for system managers and facilitating easy performance tracking.
-        \item \textbf{Testing \& Reliability:} Conducted continuous system testing, monitored data streams into PostgreSQL, and automated model retraining to maintain high system reliability.
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Business Problem Analysis:} Addressed the critical business issue of customer churn by analyzing a 10k-record bank dataset to identify core behavioral indicators and customer pain points.
+        \item \textbf{Data Analysis \& Feature Engineering:} Conducted exploratory data analysis (EDA) and engineered new features to uncover hidden patterns in customer behavior and product usage.
+        \item \textbf{Predictive Modeling for Retention:} Benchmarked multiple machine learning algorithms to accurately identify users at high risk of churning, providing a proactive tool for customer success teams.
+        \item \textbf{Stakeholder Communication \& XAI:} Utilized explainable AI techniques (SHAP, LIME) to interpret complex model results, translating technical outputs into clear, actionable business drivers for management.
     \end{itemize}
     }
 \end{rSection}
 
 \end{document}
+

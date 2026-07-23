@@ -1,0 +1,93 @@
+﻿\documentclass{resume}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.15in]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+\emergencystretch=2em
+\usepackage{enumitem}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Redefine section and name spacing for single-page layout
+\renewcommand{\sectionskip}{\vspace{5pt}}
+\renewcommand{\sectionlineskip}{\vspace{3pt}}
+\renewcommand{\nameskip}{\vspace{3pt}}
+\renewcommand{\addressskip}{\vspace{3pt}}
+
+\renewenvironment{rSection}[1]{
+  \sectionskip
+  {\color{headerblue}\textbf{\MakeUppercase{#1}}}
+  \sectionlineskip
+  {\color{rulegray}\hrule height 0.6pt}
+  \vspace{0pt}
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+    \setlength{\topsep}{0pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\itemsep}{0pt}
+  }
+  \item[]
+}{
+  \end{list}
+}
+
+\name{Pham Hung Quoc Viet}
+\address{+84 937 404 708 \\ Thu Duc, Ho Chi Minh City \\ \href{mailto:phamviet1415@gmail.com}{phamviet1415@gmail.com} \\ \href{https://github.com/vietpham10205}{github.com/vietpham10205}}
+
+\begin{document}
+
+\begin{rSection}{Objective}
+\vspace{-2pt}
+{3rd-year Information Systems student at University of Information Technology -- VNU-HCM (UIT) with a strong foundation in Business Analysis, Data Warehousing, and Process Optimization. Experienced in requirements gathering, system modeling, and translating complex data into actionable dashboards. Seeking an \textbf{ERP Intern} position to leverage analytical skills and technical background to support smart factory solutions (MES/ERP/IoT), streamline business processes, and facilitate UAT.}
+\end{rSection}
+
+\begin{rSection}{Education}
+\vspace{-2pt}
+University of Information Technology -- VNU-HCM (UIT) \hfill 2023 -- 2027 (expected)\\
+\textbf{Bachelor of Information Systems} \hfill GPA: 8.06/10 \\
+\textit{Relevant Coursework: Information Systems Analysis \& Design, Database Management Systems, Data Mining, Web Development}
+\end{rSection}
+
+\begin{rSection}{Skills}
+\vspace{-2pt}
+    \renewcommand{\arraystretch}{0.95}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{2.5ex}} >{\raggedright\arraybackslash}p{5.4in} @{} }
+        Business Analysis     & Requirement Gathering, Process Modeling (Draw.io, Visio), BRD, User Stories, UAT \\
+        Data \& ERP           & Data Warehousing, Data Analysis, Power BI, SSIS, SSAS, Microsoft Office \\
+        Design \& Tools       & Figma, Axure, Jira, Git/GitHub, Docker, Streamlit \\
+        Programming           & SQL, Python, HTML, CSS, Java, C++, PHP \\
+        Languages             & IELTS 6.5 (2022) \\
+    \end{tabular}
+    \renewcommand{\arraystretch}{1.0}
+\end{rSection}
+
+\begin{rSection}{Projects}
+    \item \textbf{E-commerce Consumer Behaviour Analysis \& BI Solution} \hfill 2025\\
+    {\small \textit{SSIS, SSAS, SQL Server, Power BI, Python, Draw.io, Visio}} \hfill | \href{https://github.com/vietpham10205/Datawarehouse-Olap_Project-E-commerce-Consumer-Behavior-Analysis-BI-Solution}{GitHub}
+    {\small
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{Business Requirement Analysis (BRD):} Collected and analyzed reporting requirements from various departments; authored Business Requirement Documents (BRD) and user stories to align technical deliverables with business goals.
+        \item \textbf{Process Modeling \& Data Warehousing:} Modeled data flow processes using Draw.io and Visio; designed a Star Schema architecture and built SSAS cubes to centralize 100k+ transaction records.
+        \item \textbf{Data Analysis \& Visualization:} Developed interactive Power BI dashboards utilizing SQL and MDX to visualize customer segmentation KPIs, providing actionable insights for stakeholders.
+        \item \textbf{System Testing (UAT) \& Documentation:} Conducted rigorous software testing and facilitated User Acceptance Testing (UAT) with end-users, delivering comprehensive documentation to ensure smooth adoption.
+    \end{itemize}
+    }
+    \vspace{15pt}
+
+    \item \textbf{NYC Taxi — Real-time Fleet Monitoring System (IoT/Smart Factory Concept)} \hfill 2026\\
+    {\small \textit{PySpark, Kafka, PostgreSQL, Streamlit, HTML/CSS, Docker, Figma, Axure}} \hfill | \href{https://github.com/vietpham10205/real-time-Fleet-Intelligence-anomaly-detection-dashboard}{GitHub}
+    {\small
+    \begin{itemize}[itemsep=4pt, parsep=0pt, leftmargin=1.2em]
+        \item \textbf{System Architecture \& Wireframing:} Researched Smart Factory (IoT/MES) concepts to design system workflows; utilized Figma and Axure to create intuitive UI wireframes for a real-time monitoring dashboard.
+        \item \textbf{Real-time Data Processing:} Configured a Kafka pipeline to ingest continuous JSON event streams at 200 msg/s, simulating the high-velocity data collection required in modern Manufacturing Execution Systems (MES).
+        \item \textbf{Data Analysis \& Anomaly Detection:} Implemented real-time analytical models (Isolation Forest) in Python to monitor route anomalies, translating complex data into operational risk control alerts.
+        \item \textbf{Interactive Web UI Deployment:} Built a responsive web dashboard using Streamlit (with custom HTML/CSS) to display live metrics, integrating continuous testing to ensure system reliability and seamless user experience.
+    \end{itemize}
+    }
+\end{rSection}
+
+\end{document}
+
